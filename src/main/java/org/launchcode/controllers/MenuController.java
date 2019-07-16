@@ -60,7 +60,7 @@ public class MenuController {
 
         Menu menu = menuDao.findOne(menuId);
         model.addAttribute("title", menu.getName());
-        model.addAttribute("cheese", menu.getCheeses());
+        model.addAttribute("cheeses", menu.getCheeses());
         model.addAttribute("menuId", menu.getId());
 
         return "menu/view";
